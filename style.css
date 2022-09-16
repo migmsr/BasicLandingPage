@@ -8,6 +8,7 @@
 }
 
 body {
+    font-family: 'Righteous', cursive;
     font-size: 100%;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,95,128,1) 0%, rgba(5,141,222,1) 100%); 
@@ -20,10 +21,10 @@ body {
     justify-content: space-around;
     padding: 10px;
     padding-left: 30px;
+    border-bottom: 0.3px solid #FFF2E7;
 }
 
 .header_title{
-    font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 50px;
     color: #FFF2E7;
@@ -44,7 +45,6 @@ body {
 }
 
 .menu_item_header{
-    font-family: 'Righteous', cursive;
     color: #FFF2E7;
     font-weight: 400;
     font-size: 18px;
@@ -55,7 +55,6 @@ body {
 }
 
 .content{
-    border-top: 0.3px solid #FFF2E7;
     margin-bottom: 48px;
 }
 
@@ -71,19 +70,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Righteous', cursive;
     gap: 32px;
 }
 
 .main_content_written_title{
-    font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 40px;
     color: #FFF2E7;
 }
 
 .main_content_written_subtitle{
-    font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 20px;
     color: #FFF2E7;
@@ -98,7 +94,6 @@ body {
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border-style: groove;
-    font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 20px;
     color: black;
@@ -124,7 +119,6 @@ body {
 .secondary_content_title{
     border-top: 0.3px solid #FFF2E7;
     padding-top: 48PX;
-    font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 24px;
     color: #FFF2E7;
@@ -132,7 +126,6 @@ body {
 }
 
 .secondary_content_paragraph{
-    font-family: 'Righteous', cursive;
     font-weight: 300;
     font-size: 18px;
     color: #FFF2E7;
@@ -151,18 +144,73 @@ body {
     border-color: #2F2325;
 }
 
-#aboutme_section{
-    height: 400;
-    width: 300;
-    border-style: groove;
-    border-color: #FFF2E7;
-    border-width: 0.4px;
+.aboutme_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 
+.aboutme_img{
+    height: 200px;
 }
 
 .aboutme_paragraph{
-    font-family: 'Righteous', cursive;
     font-weight: 300;
     font-size: 18px;
     color: #FFF2E7;
 }
+
+.hyperlink{
+    color:rgb(230, 213, 58);
+    text-decoration: underline;
+}
+
+.hyperlink:hover {
+    color: rgb(91, 175, 224);
+}
+
+.contactme_form{
+    color: #FFF2E7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.form_message{
+    resize: none;
+}
+
+.send_button{
+    background-color: #FFF2E7;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 5px;
+    border: #2F2325;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border-style: groove;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    font-family: 'Righteous', cursive;
+}
+
+.send_button:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+}
+
+.thanks_message{
+    color: #FFF2E7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 220px;
+    padding-bottom: 220px;
+    font-size: 50px;
+}
+
