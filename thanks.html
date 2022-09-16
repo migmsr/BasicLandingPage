@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thanks for messaging!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Script logic to share header and footer between all pages -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#header').load('header.html');
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#footer').load('footer.html');
+        });
+    </script>
+    <!-- Script logic to share header and footer between all pages -->
+
 </head>
 <body>
+    <div id="header"></div>
+
     <h1>Thanks for messaging!</h1>
+    
+    <div id="footer"></div>
 </body>
 </html>

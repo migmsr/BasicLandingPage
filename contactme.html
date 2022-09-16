@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miguel Ribeiro - Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Script logic to share header and footer between all pages -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#header').load('header.html');
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#footer').load('footer.html');
+        });
+    </script>
+    <!-- Script logic to share header and footer between all pages -->
 </head>
 <body>
+    <div id="header"></div>
+
     <form action="https://formsubmit.co/migmsr@hotmail.com" method="POST">
         <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
         <input type="hidden" name="_subject" value="New message!">
@@ -18,5 +35,7 @@
         <input type="text" name="text" placeholder="Your Message">
         <button type="submit">Send</button>
    </form>
+
+   <div id="footer"></div>
 </body>
 </html>
