@@ -150,3 +150,19 @@ body {
     border-style: groove;
     border-color: #2F2325;
 }
+
+#aboutme_section{
+    height: 400;
+    width: 300;
+    border-style: groove;
+    border-color: #FFF2E7;
+    border-width: 0.4px;
+
+}
+
+.aboutme_paragraph{
+    font-family: 'Righteous', cursive;
+    font-weight: 300;
+    font-size: 18px;
+    color: #FFF2E7;
+}
